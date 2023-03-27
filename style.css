@@ -1,0 +1,15 @@
+.brown-sugar {
+  color: brown;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 50px;
+}
+
+#table-yuk {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  background-color: aqua;
+  padding: 20px;
+}
