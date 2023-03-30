@@ -2,10 +2,11 @@
 
 Repo ini berisi:
 
-- belajar html dasar (pertama.html)
-- contoh cv sederhana (cv.html)
-- contoh form (form.html)
-- css eksternal (style.css)
+- belajar html dasar (folder pertama)
+- contoh cv sederhana (folder cv)
+- belajar form dilengkapi css (folder form)
+- belajar css lanjutan (folder display)
+- biodata dilengkapi css (folder biodata)
 
 NB:
 semua gambar tersimpan pada folder images
