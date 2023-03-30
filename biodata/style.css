@@ -1,0 +1,28 @@
+* {
+  color: #ffffff;
+}
+
+body {
+  background: url("images/batik.jpg");
+  background-size: 100%;
+}
+
+#nama {
+  text-align: center;
+}
+
+.tengah {
+  text-align: center;
+}
+
+.box {
+  width: 400px;
+  background-color: darkslategray;
+  margin-left: 35%;
+  padding: 30px;
+}
+
+a {
+  color: blue;
+  display: inline-table;
+}
