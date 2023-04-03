@@ -7,6 +7,8 @@ Repo ini berisi:
 - belajar form dilengkapi css (folder form)
 - belajar css lanjutan (folder display)
 - biodata dilengkapi css (folder biodata)
+- framework bootstrap (folder framework)
+- bukti ss xampp (folder screenshot)
 
 NB:
 semua gambar tersimpan pada folder images
