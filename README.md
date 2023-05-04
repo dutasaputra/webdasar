@@ -9,6 +9,7 @@ Repo ini berisi:
 - biodata dilengkapi css (folder biodata)
 - framework bootstrap (folder framework)
 - bukti ss xampp (folder screenshot)
+- belajar crud (folder public)
 
 NB:
 semua gambar tersimpan pada folder images
