@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Utama CRUD</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./font/bootstrap-icons.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAMBAH DATA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,22 +16,21 @@
 
     if(isset($_POST['tambah'])) {
 
-        require_once "./conn.php";
+        require_once "./connection.php";
 
         $nim = $_POST['nim'];
         $nama = $_POST['nama'];
         $jenis_kelamin = $_POST['jenis_kelamin'];
-        $tpt_lahir = $_POST['tpt_lahir'];
-        $tgl_lahir = $_POST['tgl_lahir'];
+        $tempat_lahir = $_POST['tempat_lahir'];
+        $tanggal_lahir = $_POST['tanggal_lahir'];
         $alamat = $_POST['alamat'];
 
-
         $sql = "INSERT INTO `data_diri`
-                (`nim`,`nama`,`jenis_kelamin`,`tpt_lahir`,`tgl_lahir`,`alamat`)
+                (`nim`,`nama`,`jenis_kelamin`,`tempat_lahir`,`tanggal_lahir`,`alamat`)
                 VALUES
-                ('$nim','$nama','$jenis_kelamin','$tpt_lahir','$tgl_lahir','$alamat')";
+                ('$nim','$nama','$jenis_kelamin','$tempat_lahir','$tanggal_lahir','$alamat')";
 
-        if (mysqli_query($conn, $sql)) {
+        if (mysqli_query($connection, $sql)) {
     ?>
         <div class="alert alert-success" role="alert">
             <i class="bi bi-info-circle"></i> Data Berhasil Ditambah. <a class="btn btn-link" href="./">Halaman
@@ -72,14 +70,14 @@
             </div>
             <div class="col-md-12">
                 <label for="validationCustom04" class="form-label">TEMPAT LAHIR</label>
-                <input type="text" class="form-control" id="validationCustom04" name="tpt_lahir" required>
+                <input type="text" class="form-control" id="validationCustom04" name="tempat_lahir" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="col-md-12">
                 <label for="validationCustom05" class="form-label">TANGGAL LAHIR</label>
-                <input type="text" class="form-control" id="validationCustom05" name="tgl_lahir" required>
+                <input type="text" class="form-control" id="validationCustom05" name="tanggal_lahir" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -97,8 +95,16 @@
             </div>
         </form>
     </div>
-    <script src="./js/bootsrap.min.js"></script>
-    <script src="./js/bootsrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous">
+    </script>
     <script type="text/javascript">
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {
